@@ -7,13 +7,13 @@
         <meta name="author" content="" />
         <title>Seoul Code - Кураторская K-beauty косметика</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -385,6 +385,84 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="scripts.js"></script
+        <!-- Модальное окно корзины -->
+        <div class="modal fade" id="cartModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">🛍️ Ваша корзина</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="cartItems">
+                            <div class="empty-cart text-center py-5">
+                                <i class="fas fa-shopping-bag fa-3x text-muted mb-3"></i>
+                                <p>Ваша корзина пуста</p>
+                            </div>
+                        </div>
+                        <div class="cart-total d-none">
+                            <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                                <h5>Итого:</h5>
+                                <h4 id="cartTotalPrice">0 ₽</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer cart-footer d-none">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить покупки</button>
+                        <button type="button" class="btn btn-primary" id="checkoutBtn">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Форма оформления заказа -->
+        <div class="modal fade" id="orderModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">📦 Оформление заказа</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Замените {ваш-id} на реальный ID из Formspree -->
+                    <form action="https://formspree.io/f/{ваш-id}" method="POST" id="orderForm">
+                        <div class="modal-body">
+                            <div class="order-summary mb-4 p-3 bg-light rounded">
+                                <h6>Ваш заказ:</h6>
+                                <div id="orderItemsList"></div>
+                                <div class="d-flex justify-content-between mt-2 pt-2 border-top">
+                                    <strong>Итого:</strong>
+                                    <strong id="orderTotalPrice">0 ₽</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="ФИО *" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="tel" class="form-control" name="phone" placeholder="Телефон *" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" name="address" placeholder="Адрес доставки *" rows="2" required></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" name="comment" placeholder="Комментарий к заказу" rows="2"></textarea>
+                            </div>
+                            <input type="hidden" name="_subject" value="Новый заказ с Seoul Code">
+                            <input type="hidden" name="order_details" id="orderDetails">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                            <button type="submit" class="btn btn-primary">Отправить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
     </body>
-</html>
+</html>                            
+
