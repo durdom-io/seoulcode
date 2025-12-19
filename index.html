@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Seoul Code - тщательно отобранная корейская косметика для идеальной кожи" />
+        <meta name="author" content="" />
+        <title>Seoul Code - Кураторская K-beauty косметика</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Логотип - можно заменить на свой -->
+                <a class="navbar-brand" href="#page-top">
+                    <img src="assets/img/logo.svg" alt="Seoul Code" class="logo-img" />
+                    <!-- или текстовый логотип -->
+                    <!-- <span class="logo-text">SEOUL<span class="logo-accent">CODE</span></span> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#brands">Бренды</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#delivery">Доставка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link cart-link" href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Header с возможностью загрузки фонового фото -->
+        <header class="masthead" style="background-image: url('assets/img/hero-bg.jpg');">
+            <!-- Для загрузки своего фона замените hero-bg.jpg в папке assets/img -->
+            <div class="container">
+                <div class="masthead-subheading">Кураторская подборка</div>
+                <div class="masthead-heading">Корейская косметика для сияющей кожи</div>
+                <p class="masthead-text">Только проверенные бренды и эффективные формулы из Сеула</p>
+                <a class="btn btn-primary btn-xl" href="#catalog">Смотреть каталог</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </header>
+
+        <!-- Каталог товаров -->
+        <section class="page-section" id="catalog">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Популярные товары</h2>
+                    <p class="section-subheading">Самые востребованные продукты из нашей коллекции</p>
+                </div>
+                <div class="row">
+                    <!-- Товар 1 - замените фото и информацию -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product1.jpg" alt="COSRX Snail Mucin Essence" />
+                                <div class="product-badge">Хит продаж</div>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">COSRX Snail Mucin Power Essence</h3>
+                                <p class="product-brand">COSRX</p>
+                                <p class="product-description">Увлажняющая эссенция с 96% муцина улитки для восстановления и сияния кожи</p>
+                                <div class="product-price">2 490 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="1">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Товар 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product2.jpg" alt="Anua Heartleaf Toner" />
+                                <div class="product-badge new">Новинка</div>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Anua Heartleaf 77% Toner</h3>
+                                <p class="product-brand">Anua</p>
+                                <p class="product-description">Успокаивающий тонер с экстрактом сердечника для чувствительной кожи</p>
+                                <div class="product-price">1 890 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="2">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Товар 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product3.jpg" alt="Beauty of Joseon Sunscreen" />
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Beauty of Joseon Relief Sun</h3>
+                                <p class="product-brand">Beauty of Joseon</p>
+                                <p class="product-description">Солнцезащитный крем SPF50+ с рисовым экстрактом и пробиотиками</p>
+                                <div class="product-price">1 690 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="3">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Товар 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product4.jpg" alt="Some By Mi AHA BHA PHA Toner" />
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Some By Mi AHA BHA PHA Toner</h3>
+                                <p class="product-brand">Some By Mi</p>
+                                <p class="product-description">Тонер для проблемной кожи с комплексом кислот для мягкого пилинга</p>
+                                <div class="product-price">1 950 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="4">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Товар 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product5.jpg" alt="Isntree Hyaluronic Acid Toner" />
+                                <div class="product-badge">Бестселлер</div>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Isntree Hyaluronic Acid Toner</h3>
+                                <p class="product-brand">Isntree</p>
+                                <p class="product-description">Интенсивно увлажняющий тонер с 5 видами гиалуроновой кислоты</p>
+                                <div class="product-price">2 190 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="5">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Товар 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img class="img-fluid" src="assets/img/products/product6.jpg" alt="Pyunkang Yul Essence Toner" />
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Pyunkang Yul Essence Toner</h3>
+                                <p class="product-brand">Pyunkang Yul</p>
+                                <p class="product-description">Укрепляющий эссенция-тонер для восстановления кожного барьера</p>
+                                <div class="product-price">1 750 ₽</div>
+                                <button class="btn btn-add-to-cart" data-product="6">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-primary btn-xl" href="#">Весь каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Бренды -->
+        <section class="page-section bg-light" id="brands">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Наши бренды</h2>
+                    <p class="section-subheading">Мы тщательно отбираем лучшие корейские марки</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/cosrx.svg" alt="COSRX" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/anua.svg" alt="Anua" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/beautyofjoseon.svg" alt="Beauty of Joseon" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/somebymi.svg" alt="Some By Mi" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/isntree.svg" alt="Isntree" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="brand-logo">
+                            <img src="assets/img/brands/pyunkangyul.svg" alt="Pyunkang Yul" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Почему Seoul Code?</h2>
+                    <p class="section-subheading">Наша философия и подход к отбору косметики</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Экспертный отбор</h3>
+                            <p>Мы тестируем каждое средство и выбираем только самые эффективные формулы от проверенных корейских брендов.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Чистые составы</h3>
+                            <p>Осознанный подход к красоте: мы отдаем предпочтение средствам с безопасными и эффективными компонентами.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Персональный подход</h3>
+                            <p>Поможем подобрать уход именно для вашего типа кожи и решить конкретные проблемы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Доставка -->
+        <section class="page-section bg-light" id="delivery">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Удобная доставка</h2>
+                        <div class="delivery-item mb-4">
+                            <h4><i class="fas fa-shipping-fast"></i> Быстрая отправка</h4>
+                            <p>Отправляем заказы в день оформления или на следующий рабочий день</p>
+                        </div>
+                        <div class="delivery-item mb-4">
+                            <h4><i class="fas fa-truck"></i> По всей России</h4>
+                            <p>Доставляем в любую точку страны через СДЭК, Boxberry и Почту России</p>
+                        </div>
+                        <div class="delivery-item mb-4">
+                            <h4><i class="fas fa-undo"></i> Легкий возврат</h4>
+                            <p>Возврат товара в течение 14 дней при сохранении товарного вида</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="delivery-image">
+                            <img src="assets/img/delivery.jpg" alt="Доставка" class="img-fluid rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Остались вопросы?</h2>
+                    <p class="section-subheading">Напишите нам, и мы поможем с выбором</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-info">
+                            <h4><i class="fas fa-envelope"></i> Email</h4>
+                            <p>hello@seoulcode.ru</p>
+                        </div>
+                        <div class="contact-info">
+                            <h4><i class="fas fa-phone"></i> Телефон</h4>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                        <div class="contact-info">
+                            <h4><i class="fas fa-clock"></i> Режим работы</h4>
+                            <p>Пн-Пт: 10:00-19:00<br>Сб-Вс: 11:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Ваше имя *" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Ваш Email *" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="tel" placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Ваше сообщение *" rows="5" required></textarea>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl w-100" type="submit">Отправить сообщение</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start mb-3 mb-lg-0">
+                        <div class="footer-logo">
+                            <img src="assets/img/logo.svg" alt="Seoul Code" class="logo-img" />
+                        </div>
+                        <p class="mt-2">Кураторская подборка корейской косметики</p>
+                    </div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <div class="social-links">
+                            <a class="btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn-social" href="#"><i class="fab fa-telegram"></i></a>
+                            <a class="btn-social" href="#"><i class="fab fa-vk"></i></a>
+                            <a class="btn-social" href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <p>© Seoul Code 2024<br>Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
