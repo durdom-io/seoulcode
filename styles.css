@@ -325,38 +325,51 @@ a:hover {
 }
 
 /* Бренды */
-.bg-light {
-    background-color: var(--color-light) !important;
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.brand-logo {
+.brand-card {
     background: var(--color-white);
-    border-radius: 10px;
-    padding: 1.5rem;
-    height: 120px;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.brand-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
 }
 
-.brand-logo:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.brand-card h4 {
+    color: var(--color-dark);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
 }
 
-.brand-logo img {
-    max-height: 60px;
-    max-width: 100%;
-    filter: grayscale(100%);
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-
-.brand-logo:hover img {
-    filter: grayscale(0%);
-    opacity: 1;
+.brand-desc {
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* Особенности */
