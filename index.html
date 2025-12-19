@@ -277,54 +277,86 @@
         </section>
 
         <!-- Контакты -->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading">Остались вопросы?</h2>
-                    <p class="section-subheading">Напишите нам, и мы поможем с выбором</p>
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading">Остались вопросы?</h2>
+            <p class="section-subheading">Напишите нам, и мы поможем с выбором</p>
+        </div>
+        
+        <!-- Форма через Formspree -->
+        <form action="https://formspree.io/f/{https://formspree.io/f/xykgzypw}" method="POST" id="contactForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Ваше имя *" required />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="Ваш Email *" required />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="tel" name="phone" placeholder="Телефон *" required />
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="question_type">
+                            <option value="">Тип вопроса</option>
+                            <option value="consult">Консультация по уходу</option>
+                            <option value="order">Вопрос по заказу</option>
+                            <option value="delivery">Доставка и оплата</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="contact-info">
-                            <h4><i class="fas fa-envelope"></i> Email</h4>
-                            <p>hello@seoulcode.ru</p>
-                        </div>
-                        <div class="contact-info">
-                            <h4><i class="fas fa-phone"></i> Телефон</h4>
-                            <p>+7 (999) 123-45-67</p>
-                        </div>
-                        <div class="contact-info">
-                            <h4><i class="fas fa-clock"></i> Режим работы</h4>
-                            <p>Пн-Пт: 10:00-19:00<br>Сб-Вс: 11:00-18:00</p>
-                        </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Ваше сообщение *" rows="6" required></textarea>
                     </div>
-                    <div class="col-lg-8">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Ваше имя *" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Ваш Email *" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="tel" placeholder="Телефон" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Ваше сообщение *" rows="5" required></textarea>
-                                    </div>
-                                    <button class="btn btn-primary btn-xl w-100" type="submit">Отправить сообщение</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                        <label class="form-check-label" for="privacy">
+                            Я соглашаюсь с обработкой персональных данных
+                        </label>
                     </div>
+                    <button class="btn btn-primary btn-xl w-100" type="submit">Отправить сообщение</button>
                 </div>
             </div>
-        </section>
-
+        </form>
+        
+        <!-- Альтернативные способы связи -->
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="contact-method text-center">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <p>+7 (999) 123-45-67</p>
+                    <a href="https://wa.me/79991234567" class="btn btn-outline-primary btn-sm" target="_blank">Написать</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-method text-center">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h4>Telegram</h4>
+                    <p>@seoulcode_help</p>
+                    <a href="https://t.me/seoulcode_help" class="btn btn-outline-primary btn-sm" target="_blank">Написать</a>
+                </div>
+</div>
+            <div class="col-md-4 mb-4">
+                <div class="contact-method text-center">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>hello@seoulcode.ru</p>
+                    <a href="mailto:hello@seoulcode.ru" class="btn btn-outline-primary btn-sm">Написать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Footer-->
         <footer class="footer py-5">
             <div class="container">
